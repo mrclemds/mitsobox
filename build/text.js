@@ -1,9 +1,11 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-const TEXT = exports.TEXT = text => {
+exports.TEXT = void 0;
+const TEXT = text => {
   let buff = new Buffer(text, 'ucs2').toString('binary');
   return buff;
 };
+exports.TEXT = TEXT;
